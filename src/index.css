@@ -1,0 +1,31 @@
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "zh quote", -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", 微软雅黑, sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-variant-ligatures: none;
+  background-color: #ffffff;
+  color: #212529;
+  font-variant-numeric: tabular-nums;
+}
+
+
+
+/*ant自带样式扭转*/
+.ant-menu-item:hover{
+  background-color: #EEECEC;
+}
+
+.ant-menu:not(.ant-menu-horizontal) li.ant-menu-item-selected {
+  background-color: #FF47471A;
+}
+
+
+li.ant-dropdown-menu-item:hover, li.ant-dropdown-menu-submenu-title:hover {
+  background-color: #FF47471A;
+}
