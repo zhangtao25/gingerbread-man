@@ -5,8 +5,6 @@ const WebpackBar = require("webpackbar")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-// import mongoose = require('html-webpack-plugin');
-
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -14,6 +12,8 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "static/js/main.[hash].chunk.js",
   },
+  // 这边用cdn加速能减少大量的包体积！
+  externals:{'react': 'React', 'react-dom': 'ReactDOM','antd': 'antd'},
   // 配置各种loade
   module: {
     rules: [
