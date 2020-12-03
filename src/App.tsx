@@ -1,19 +1,15 @@
-import React from 'react';
-import {HashRouter as Router} from 'react-router-dom';
-import {HookStore} from "./store/HookStore";
-import routes from "./router";
-import {renderRoutes} from "react-router-config";
+import React from "react"
+import { HashRouter as Router } from "react-router-dom"
+import { HookStore } from "./store/HookStore"
+import PageView from "./layout/PageView"
 
-const App = (props:any) => {
-
+const App = (props: any) => {
   return (
     <HookStore>
       <Router>
-        {/*<PageView/>*/}
-        {renderRoutes(routes)}
+        <PageView />
       </Router>
     </HookStore>
-
   )
 }
 
