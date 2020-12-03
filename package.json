@@ -1,7 +1,7 @@
 {
-  "name": "platform-admin-v3",
+  "name": "gingerbread-man",
   "version": "1.0.0",
-  "main": "src/electron/main.js",
+  "main": "index.js",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/activity1020/platform-admin-v3.git"
+    "url": "https://github.com/zhangtao25/gingerbread-man.git"
   },
-  "author": "",
+  "author": "zhangtao25",
   "license": "ISC",
   "description": "",
   "dependencies": {
