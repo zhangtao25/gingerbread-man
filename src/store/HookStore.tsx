@@ -29,6 +29,17 @@ export const HookStore = observer((props) => {
       store.personalSettingIsModalVisible = isVisible
     },
   }))
-  console.log(store, "store")
+
+  // const store1: any = useLocalObservable(() => ({
+  //   count: 1,
+  //   get getCount() {
+  //     return store.count
+  //   },
+  //   handleCount() {
+  //     store.count += 2
+  //   },
+  // }))
+  //
+  // console.log(store, "store")
   return <MyContext.Provider value={store}>{props.children}</MyContext.Provider>
 })

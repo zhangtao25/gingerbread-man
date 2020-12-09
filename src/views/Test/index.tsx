@@ -7,7 +7,7 @@ import touxiang from "./../../assets/touxiang.jpg"
 const CounterFunction = (props: any) => {
   const [num, setNum] = useState(10)
   const store: any = useContext(MyContext) // 当组件上层最近的 <MyContext.Provider> 更新时，该 Hook 会触发重渲染，并使用最新传递给 MyContext provider 的 context value 值。
-
+  console.log(store)
   useEffect(() => {
     console.log("num change", MyContext)
   }, [num])
