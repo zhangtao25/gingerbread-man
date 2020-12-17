@@ -20,3 +20,7 @@ echart ant desgin momentjs
 
 功能解析
 与页面结合
+
+https://segmentfault.com/a/1190000021803437
+
+git config --global core.autocrlf false
